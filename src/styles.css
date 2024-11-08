@@ -1,0 +1,208 @@
+body {
+  background-color: #f0f0f0;
+  background-image: url("../public/fondo.png");
+  background-repeat: repeat;
+  box-sizing: border-box;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Odibee Sans", sans-serif;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  color: #009048;
+  font-weight: 700;
+  font-size: 80px;
+  width: 200px;
+  letter-spacing: 2px;
+}
+
+.empezar {
+  background-color: #006cfc;
+  border: 5px solid #001997;
+  font-size: 45px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-family: "Odibee Sans", sans-serif;
+  letter-spacing: 3px;
+}
+
+.texto {
+  margin-top: 80px;
+  font-weight: 600;
+  font-size: 40px;
+  width: 280px;
+  padding-bottom: 40px;
+  letter-spacing: 3px;
+}
+
+.result {
+  font-size: 1.5rem;
+  color: #2c3e50;
+}
+
+.puntaje {
+  font-size: 1.5rem;
+}
+
+#tijera,
+#piedra,
+#papel {
+  border: none;
+  background-color: #f0f0f000;
+}
+
+button img {
+  width: 105px;
+  height: 230px;
+}
+
+.juego {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.opciones {
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  z-index: 1000;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  top: 4rem;
+  position: relative;
+}
+
+.rotar-180 {
+  transform: rotate(180deg);
+  margin-top: 2rem;
+  width: 105px;
+  height: 230px;
+  font-size: 400px;
+}
+
+footer {
+  letter-spacing: 30px;
+  margin-top: 80px;
+  color: #fff;
+}
+
+.resumen {
+  font-size: 25px;
+  margin: auto;
+}
+
+.imgScore {
+  margin: 2rem;
+}
+
+.puntajeFinal {
+  background-color: #f0f0f0;
+  border: 7px solid black;
+  border-radius: 10px;
+  width: 180px;
+  margin: auto;
+  font-weight: 400;
+  letter-spacing: 5%;
+  height: 150px;
+  padding: 1rem;
+}
+
+.score {
+  font-size: 50px;
+  margin: 0;
+}
+
+.scoreNum {
+  font-size: 30px;
+  letter-spacing: 5%;
+  font-weight: 400;
+  margin-top: 1rem;
+  text-align: end;
+  margin-right: 2rem;
+}
+
+.scoreNum p {
+  margin: 0;
+}
+
+.opcionesJuego {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem;
+}
+
+.empate {
+  font-size: 2.5rem;
+}
+
+body.ganaste {
+  background-color: rgba(0, 128, 0, 0.276);
+}
+
+body.perdiste {
+  background-color: rgba(255, 0, 0, 0.302);
+}
+
+#jugar-de-nuevo,
+#salir-del-juego {
+  background-color: #006cfc;
+  border: 5px solid #001997;
+  font-size: 30px;
+  font-weight: 400;
+  color: white;
+  text-decoration: none;
+  padding: 5px 40px;
+  border-radius: 10px;
+  font-family: "Odibee Sans", sans-serif;
+  letter-spacing: 3px;
+}
+
+.cuenta-regresiva {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 60px;
+}
+
+.spinner {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  border: 8px solid rgba(0, 0, 0, 0.2);
+  border-top: 8px solid #08314c;
+  border-radius: 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
