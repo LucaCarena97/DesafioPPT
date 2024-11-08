@@ -1,3 +1,3 @@
-dwf-4
+Desafio: Piedra, Papel o Tijera
 
-URL: https://lucacarena97.github.io/DesafioPPT/
+URL: https://desafiojuego.netlify.app
